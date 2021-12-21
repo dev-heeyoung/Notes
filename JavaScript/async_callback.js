@@ -49,13 +49,13 @@ class UserStorage {
 }
 
 const userStorage = new UserStorage();
-const id = promt('enter your id');
+const id = prompt('enter your id');
 const password = prompt('enter your password');
 userStorage.loginUser(
     id,
     password,
     user => {
-        UserStorage.getRoles(
+        userStorage.getRoles(
             user,
             userWithRole => {
                 alert(
