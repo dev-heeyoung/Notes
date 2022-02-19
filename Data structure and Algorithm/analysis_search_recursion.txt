@@ -1,0 +1,32 @@
+#Algorithmes Analysis
+	-Two main resources: time, memory
+	-Growth rate of resource consumption: How much more of the same resource will it consume to process n+1 pieces of data
+	-Time Resource: One way that we can measure the amount of time required by an algorithm is to measure how many operations it performs.
+					(assumption: every operation ahs the same time cost)
+	-Memory Resource: variable declarations, dynamically allocated memory etc.
+	-Growth Rates: Understanding the growth in resource consumtion as the amount of data increases.
+					(Most efficient) constant(y=1) -> Logarithmic(y=log n) -> Linear(y=n) -> Loglinear(y=n log n) -> Quadratic(y=n^2) -> Cubic(y=n^3) -> Exponential(y=2^n) (least efficient)
+		*Constant: The resource need does not grow as data gets bigger.
+		*Logarithmic: The resource needs grows by one unit each time the data is doubled.
+		*Linear: The resource needs and the amount of data is directly proportional to each other.
+		*Loglinear: Slightly curved line. The curve is more pronounced for lower values than higher ones.
+		*Quadratic: It can be described by a parabola.
+		*cubic: Similar to the quadratic curve, it grows significantly faster.
+		*Exponential: Each extra unit of data requires a doubling of resource.
+	-Asymptotic Notation: O(f(n)), o(f(n)), ¥Ø(f(n)), Theta(f(n))¥È(f(n)) (Pronounced, Big-O, Little-O, Omega, Theta).
+		*Big-O describes an upper bound on each of these cases.  
+		*T(n) is O(f(n)) iff for some constants c and n0, T(n)<=cf(n) for all n>=n0.
+		*O(f(n)) means that the curve described by f(n) is an upper bound for the resource needs of a function T(n).
+
+#Search 
+	-Linear Search: Starting at the beginning of the data set, each item of data is examined until a match is made. 
+		*Time complexity: O(n)
+	-Binary Search: It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.
+		*Two criteria:  1. The list must be sorted.
+						2. Access to any element given its position must have a constant run time.
+		*Time complexity: O(log n)
+
+#Recursion 
+	-Recursive function calls itself until the program achieves the desired result.
+	-Understanding the workings of the run-time stack is key to understanding recursion.
+	-Stating the base case is the first step of writing a recursive function.
