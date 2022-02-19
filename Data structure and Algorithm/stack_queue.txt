@@ -1,0 +1,22 @@
+#Stacks and Queues
+	-The most important thing to remember about stacks and queues is that its all about the ordering.  This absolutely must be tracked and maintained. Access is typically only granted to the item that is at the top/front of the stack/queue.
+	-Stack: First In, Last Out (FILO)
+		*Using array
+			> Insertion: O(1) ************************
+			> Deletion: O(1)
+		*Using singly list
+			> Insertion/Deletion at front: O(1)/O(1)
+			> Insertion/deletion at back: O(N)/O(N) ***O(1)/O(N) if the list object has back
+		*Using doubly list 
+			> Insertion/Deletion at front: O(1)
+			> Insertion/deletion at back: O(1)
+	-Queue: First In, First Out (FIFO)
+		*Using array
+			> Insertion at front/Deletion at back: O(N)/O(1)
+			> Insertion at back/Deletion at front: O(1)/O(N)
+		*Using signly list
+			> Insertion at front/Deletion at back: O(1)/O(N) 
+			> Insertion at back/Deletion at front: O(N)/O(1) ***O(1)/O(1) if the list object has back
+		*Using doubly list
+			> Insertion at front/Deletion at back: O(1)/O(1)
+			> Insertion at back/Deletion at front: O(1)/O(1)
