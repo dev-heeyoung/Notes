@@ -1,0 +1,35 @@
+#Lists
+	-An array or a linked list data structure can be used.
+	-A list is an sequence of values.
+	-The most important part about list structures is that the data has an ordering. Ordering means that there is an idea that there is a "first" item, a "second" item and so on.
+	-Array vs List
+		*Advantages of Array
+			1. We can have direct access to any item with an index because items are stroed in memory consecutively. 
+			2. We can use binary search when the array is sorted.
+		*Disadvantages of Array
+			1. Making the array can be expensive.
+			2. Space is often wasted.
+			3. Insertion/deletion a value into anywhere other than the very end of the array is an expensive.
+		*Advantages of List
+			1. It is easy to grow and shrink.
+			2. Insertion/deletion a value into anywhere other than the very end of the array is efficient.
+		*Disadvantages of List
+			1. A large block of contiguous memory is not required becasue data is not stored in consecutive memory.
+			2. We cannot have direct access to any item.
+			3. Each piece of data requires the storage of at least one extra pointer.
+			4. We cannot use binary search.
+	-Linked list: A linked list is a data structure that stores a collection of objects in a sequential manner. It stores data in nodes and each node has at least one pointer to another node, typically the next node.
+		*Singly linked list 
+			> Searching: O(N)
+			> Front Insertion: O(1)
+			> Front Deletion: O(1)
+			> Back Insertion: O(N) ***O(1) if the list object has back
+			> Back Deletion: O(N)
+		*Doubly linked list 
+			> Searching: O(N)
+			> Front Insertion: O(1)
+			> Front Deletion: O(1)
+			> Back Insertion: O(1)
+			> Back Deletion: O(1)
+	-Iterators: It allows you to traverse a container class without actually knowing what the underlying container actually is or how that container may be implemented. The important concept is that an iterator lets us go through a container one data item at a time.
+	-Sentinel Nodes: Sentinel nodes are nodes that exist at the front and back of a linked list. They do not hold any data.	
