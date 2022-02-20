@@ -1,0 +1,17 @@
+#Sorting
+	-Sorting is the process of taking a set of data and creating an ordering based on some criteria. The criteria must allow for items to be compared and used to determine what should come first and second. 
+	-Bubble Sort: It compares two adjacent elements and swaps them until they are not in the intended order.
+		*Time complexity: O(n^2)
+		*When the array is already sorted: O(N)
+	-Insertion Sort: Values from the unsorted part are picked and placed at the correct position in the sorted part.
+		*Time complexity: O(n^2)
+	-Selection Sort: It works by selecting the smallest value out of the unsorted part of the array and placing it at the back of the sorted part of the array.
+		*Time complexity: O(n^2)
+	-Merge Sort: It is based on divide and conquer technique.
+		*Wortst complexity: O(nlogn)
+		*Average complexity: O(nlogn)
+		*Best complexity: O(nlogn)
+	-Quick Sort: It is fast and does not have the extra memory requirements of MergeSort.
+		*Wortst complexity: O(n^2) -> The worst case is choosing a pivot that divides up the array into an empty array and a array containing everything else every single time.
+		*Average complexity: O(nlogn) -> The best case is choosing a pivot that divides up the array into two equal size arrays every single time.
+		*Best complexity: O(nlogn)
